@@ -64,3 +64,9 @@ h1 {
     font-size: 50px;
     margin-bottom: 15px;
 }
+
+/* Styles the decimal Unicode code below the emoji (also to see clearly) */
+.emoji-code {
+    font-size: 16px;
+    color: #000000;
+}
