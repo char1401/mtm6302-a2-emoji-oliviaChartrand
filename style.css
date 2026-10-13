@@ -57,3 +57,10 @@ h1 {
     /* Adds a subtle border around each card */
     border: 1px solid #000000;
 }
+
+/* Makes the emoji large enough to see clearly */
+.emoji {
+    display: block;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
