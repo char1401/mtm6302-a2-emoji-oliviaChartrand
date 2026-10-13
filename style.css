@@ -1,0 +1,18 @@
+body {
+    /* Removes the browser's default outer spacing. */
+    margin: 0;
+
+    /* Adds space between the content and the edges of the page */
+    padding: 30px;
+
+    /* Sets a simple, readable font */
+    font-family: Arial, sans-serif;
+
+    /* Gives the page my faourite color as a background but more transparent */
+    background-color: #780606a2;
+
+    /* Sets the default text colour */
+    color: #000000;
+}
+
+/*  */
