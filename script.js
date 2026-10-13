@@ -13,3 +13,7 @@ const emojiCodes = [
     127800, // 🌸 Cherry blossom
     127774  // ☀️ Sun
 ];
+
+// 2. Build the gallery with JavaScript
+// searches the HTML for an element with the matching id
+const gallery = document.getElementById("emoji-gallery");
