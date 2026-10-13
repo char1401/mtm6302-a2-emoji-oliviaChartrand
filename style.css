@@ -8,7 +8,7 @@ body {
     /* Sets a simple, readable font */
     font-family: Arial, sans-serif;
 
-    /* Gives the page my faourite color as a background but more transparent */
+    /* Gives the page my faourite colour as a background but more transparent */
     background-color: #780606a2;
 
     /* Sets the default text colour */
@@ -21,4 +21,22 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* */
+/* 5. Present the gallery clearly */
+/* Arranges the generated emoji cards in a grid */
+#emoji-gallery {
+    display: grid;
+
+    /* Creates as many columns as will fit */
+    /* Each card must be at least 150px wide */
+    /* 1fr allows columns to share the available space */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    /* Adds space between rows and columns */
+    gap: 20px;
+
+    /* Prevents the gallery from becoming excessively wide */
+    max-width: 1000px;
+
+    /* Centres the gallery horizontally */
+    margin: 0 auto;
+}
