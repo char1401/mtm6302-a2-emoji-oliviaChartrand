@@ -40,3 +40,20 @@ h1 {
     /* Centres the gallery horizontally */
     margin: 0 auto;
 }
+
+/* Styles every card created by JavaScript */
+.emoji-card {
+    background-color: white;
+
+    /* Adds space inside each card */
+    padding: 25px 15px;
+
+    /* Rounds the card's corners */
+    border-radius: 10px;
+
+    /* Centres the emoji and its decimal code */
+    text-align: center;
+
+    /* Adds a subtle border around each card */
+    border: 1px solid #000000;
+}
