@@ -26,6 +26,51 @@ function showEmojis(count = emojiCodes.length) {
     // prevents duplicate cards when the function is called multiple times
     gallery.innerHTML = "";
 
+    // 5. Present the gallery clearly (for JS: Use const and let, not var)
+    for (let index = 0; index < count; index++) {
+        // Get the decimal Unicode code at the current index
+        const code = emojiCodes[index];
+    
+        // Convert the decimal code into an emoji
+        // Converts a Unicode code point into the character it represents
+        const emoji = String.fromCodePoint(code);
+
+        // creates an HTML without needing to write it manually in index.html
+        const card = document.createElement("div");
+
+        // !!!BEWARE!!! Things get confusing for me here, thank you https://www.w3schools.com for carrying all my assignements
+        // Assign a CSS class so the card receives its styling
+        card.className = "emoji-card";
+
+        // Create an element to display the emoji
+        const emojiElement = document.createElement("span");
+
+        // The CSS class will make the emoji large (thinking ahead)
+        emojiElement.className = "emoji";
+
+        // Will put the emoji character inside the span (thinking ahead)
+        emojiElement.textContent = emoji;
+
+        // Creates an element to display the decimal code
+        const codeElement = document.createElement("p");
+
+        // The CSS class styles the decimal code (thinking ahead)
+        codeElement.className = "emoji-code";
+
+        // Display the original number, not the emoji character
+        codeElement.textContent = "Code: " + code;
+
+        // Put the two elements inside the card
+        // Adds an element inside another element (the emoji appears first, followed by its code)
+        card.appendChild(emojiElement);
+        card.appendChild(codeElement);
+
+        // Each loop creates and adds one new card
+        gallery.appendChild(card);
+    }
 }
 
+// No argument is supplied, so count defaults to emojiCodes.length, which is 12 in this assignment
 showEmojis();
+
+// IT WORKS OMG I SEE THE EMOJIS ON THE PAGE NOW YIPPIE!!!! WAHOOO!!! HURRAY!!!
