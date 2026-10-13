@@ -17,3 +17,10 @@ const emojiCodes = [
 // 2. Build the gallery with JavaScript
 // searches the HTML for an element with the matching id
 const gallery = document.getElementById("emoji-gallery");
+
+// 3. Create one function
+// The count parameter controls how many emojis to display
+// showEmojis() displays all emojis when no argument is supplied
+function showEmojis(count = emojiCodes.length) {
+
+}
