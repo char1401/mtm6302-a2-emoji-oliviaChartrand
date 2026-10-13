@@ -22,5 +22,10 @@ const gallery = document.getElementById("emoji-gallery");
 // The count parameter controls how many emojis to display
 // showEmojis() displays all emojis when no argument is supplied
 function showEmojis(count = emojiCodes.length) {
+    // 4. Display all emojis when the page loads
+    // prevents duplicate cards when the function is called multiple times
+    gallery.innerHTML = "";
 
 }
+
+showEmojis();
